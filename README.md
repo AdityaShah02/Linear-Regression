@@ -28,7 +28,7 @@ pip install numpy pandas matplotlib
 #### Code Explanation
 
 1. **Loading and Visualizing the Data**
-   - The dataset is loaded using Pandas from the provided CSV file.
+   - The dataset is loaded using Pandas from the provided CSV file. (add the path of the dataset provided)
    - The relationship between years of experience and salary is visualized using Matplotlib.
 
 2. **Adding Intercept Term**
@@ -47,7 +47,8 @@ pip install numpy pandas matplotlib
 #### Running the Code
 
 Open the Jupyter Notebook (LinearRegression_Simple.ipynb) and execute the cells sequentially. This will walk you through each step of the Simple Linear Regression process.
-Results
+
+#### Results
 
 The final model parameters (M and C) are printed, and the best-fit line is plotted along with the original data points.
 
@@ -59,3 +60,39 @@ The final model parameters (M and C) are printed, and the best-fit line is plott
    - Jupyter Notebook containing the implementation of Multiple Linear Regression.
    - Utilizes two features (fixed acidity and volatile acidity) to predict the quality of wine.
 
+### Dataset
+
+The Multiple Linear Regression project uses a wine quality dataset (winequality-red.csv) with various features related to wine characteristics. The dataset is located in the data directory.
+Getting Started
+
+Similar to the Simple Linear Regression project, run the necessary commands to mount Google Drive and install dependencies if required.
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+### Code Explanation
+
+1. **Loading and Visualizing the Data**
+   - The dataset is loaded using Pandas from the provided CSV file.
+   - Features (fixed acidity and volatile acidity) and the target variable (quality) are selected.
+2. **Converting Table to Arrays**
+   - The feature matrix (X) is created by adding an intercept term and converting it to a NumPy array.
+3. **Gradient Descent**
+   - Gradient descent is implemented to optimize the model parameters (theta). It iteratively updates the parameters to minimize the cost function.
+4. **3D Plotting**
+   - A 3D plot is created to visualize the relationship between two features (fixed acidity and volatile acidity) and the target variable (quality).
+
+5. **Results**
+   - The final model parameters (theta0, theta1, and theta2) are printed.
+   - The cost function is visualized over iterations, and the best-fit plane is plotted in a 3D graph.
+
+#### Running the Code
+Open the Jupyter Notebook (LinearRegression_Multiple.ipynb) and execute the cells sequentially. This will guide you through the process of Multiple Linear Regression.
+Results
+
+The final model parameters (theta0, theta1, and theta2) are printed, and the cost function is visualized over iterations. The best-fit plane is plotted in a 3D graph.
+Contributing
+
+**Everything added in this repository is correct to my best knowledge. Still if you come across any error(s), feel free to suggest the corrections on the mail address shah.adity072@gmail.com .**
